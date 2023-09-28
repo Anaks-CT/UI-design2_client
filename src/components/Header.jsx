@@ -9,8 +9,8 @@ const Header = () => {
 
   const [openNav, setOpenNav] = useState(false)
   return (
-    <div className="flex border justify-between">
-      <div className="md:border-r p-3 pl-4">
+    <div className="flex border justify-between bg-white absolute w-full">
+      <div className="md:border-r p-3 py-2 pl-4">
         <h1 className="text-[1.6rem] font-bold md:pr-36 ">IOGO</h1>
       </div>
       <img onClick={() => setOpenNav(true)} src={burger} alt="" className="text-black md:hidden pr-3"/>
