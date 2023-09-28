@@ -2,14 +2,19 @@ import ClockedInImg from "../assets/exit.svg";
 import questionIcon from "../assets/questionMark.svg";
 import notifyIcon from "../assets/notification.svg";
 import profileIcon from "../assets/ProfileIcon.svg";
+import burger from "../assets/burger.svg"
+import { useState } from "react";
 
 const Header = () => {
+
+  const [openNav, setOpenNav] = useState(false)
   return (
-    <div className="flex border">
-      <div className="border-r p-3 pl-4">
-        <h1 className="text-[1.6rem] font-bold pr-36">IOGO</h1>
+    <div className="flex border justify-between">
+      <div className="md:border-r p-3 pl-4">
+        <h1 className="text-[1.6rem] font-bold md:pr-36 ">IOGO</h1>
       </div>
-      <div className="flex justify-between w-full">
+      <img onClick={() => setOpenNav(true)} src={burger} alt="" className="text-black md:hidden pr-3"/>
+      <div className="justify-between w-full md:flex hidden">
         <div className="flex gap-[30px] text-[13px] font-medium text-gray-500 p-5 pl-8">
           <p>Dashboard</p>
           <p>Patients</p>
