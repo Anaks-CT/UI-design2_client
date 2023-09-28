@@ -1,7 +1,7 @@
 const SectionHeader = () => {
   return (
-    <div className="pt-[75px] px-7 bg-white h-[180px] w-full">
-      <div className="flex flex-col justify-between h-full">
+    
+      <div className="flex flex-col justify-between h-full px-7">
         <div>
           <p className="text-lg font-[700]">Tasks</p>
           <p className="text-[11px] font-medium text-gray-500">{`Clinical > Tasks`}</p>
@@ -11,8 +11,6 @@ const SectionHeader = () => {
             <p className="text-[13px] text-gray-500 font-medium p-2">Completed Tasks</p>
         </div>
       </div>
-      <div></div>
-    </div>
   );
 };
 
