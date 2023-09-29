@@ -1,4 +1,3 @@
-import SideBar from "../SideBar"
 import SectionBody from "./sectionBody/SectionBody"
 import SectionHeader from "./SectionHeader"
 import rightArrow from "../../assets/rightArrow.svg"
