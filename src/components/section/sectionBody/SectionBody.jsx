@@ -2,9 +2,9 @@ import SearchSortFilter from "./SearchSortFilter";
 import { userAppInfo } from "../../../staticData";
 import SingleUserInfo from "./SingleUserInfo";
 
-const SectionBody = () => {
+const SectionBody = ({toggleShow}) => {
   return (
-    <div className="bg-white m-8 my-6 p-3 px-4 rounded-lg">
+    <div className={`${toggleShow && "bg-black opacity-60"} bg-white lg:m-8  lg:my-6 p-3 px-4 border-t lg:border-t-0 lg:rounded-lg`}>
       <SearchSortFilter />
       <div className="flex flex-col gap-2 mt-4">
         {userAppInfo.map((info) => (

@@ -9,12 +9,12 @@ const Header = () => {
 
   const [openNav, setOpenNav] = useState(false)
   return (
-    <div className="flex border justify-between bg-white absolute w-full z-10">
-      <div className="md:border-r p-3 py-2 pl-4">
-        <h1 className="text-[1.6rem] font-bold md:pr-36 ">IOGO</h1>
+    <div className="flex border justify-between bg-white fixed w-full z-20">
+      <div className="lg:border-r p-3 py-2 pl-4">
+        <h1 className="text-[1.6rem] font-bold lg:pr-36 ">IOGO</h1>
       </div>
-      <img onClick={() => setOpenNav(true)} src={burger} alt="" className="text-black md:hidden pr-3"/>
-      <div className="justify-between w-full md:flex hidden">
+      <img onClick={() => setOpenNav(true)} src={burger} alt="" className="text-black lg:hidden pr-3"/>
+      <div className="justify-between w-full lg:flex hidden">
         <div className="flex gap-[14px] text-[13px] font-medium text-gray-500 pl-8">
           <p className="py-5 px-2">Dashboard</p>
           <p className="py-5 px-2">Patients</p>
