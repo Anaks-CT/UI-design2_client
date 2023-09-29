@@ -39,7 +39,7 @@ const SingleUserInfo = ({
           </div>
         </div>
         <div className="flex-1 justify-start lg:justify-end text-start lg:text-end flex flex-col items-end mr-6 lg:mr-0 status-assessment-wrapper">
-          <div className="flex gap-5 flex-1 justify-end items-center status-wrapper">
+          <div className={`${status === "completed" && "hidden"} flex gap-5 flex-1 justify-end items-center status-wrapper`}>
             <p className="text-gray-500 text-[14px]">Status</p>
             <span
               className={`text-lg lg:text-xl font-semibold ${
